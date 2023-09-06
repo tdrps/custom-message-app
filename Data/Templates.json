@@ -7,7 +7,7 @@
   {
     "id" : 1,
     "name" : "Welcome Message",
-    "message" : "Welcome {$guest} and {$greeting}! We're so glad you're here in {$roomNumber}, thanks for staying with us here at {$company}"
+    "message" : "Welcome {$guest} and {$greeting}! We're so glad you're here in room {$roomNumber}, thanks for staying with us here at {$company}"
   },
   {
     "id" : 2,
