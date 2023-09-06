@@ -13,7 +13,7 @@
 
 1. Navigate to root of the project: custom-message-app/
 2. Run 'php -S localhost:8000 -t ./'
-3. Go to http://localhost/8080
+3. Go to http://localhost/8000
 4. Follow the prompts on the webpage
 
 ## Overview of Design Decisions
