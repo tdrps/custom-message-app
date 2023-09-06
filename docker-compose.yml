@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - "./:/var/www/html/"
+  # db:
+  #   image: mysql
+  #   restart: always
+  #   environment:
+  #       MYSQL_ROOT_PASSWORD: password
+  #       MYSQL_DATABASE: message_app
+  #       MYSQL_USER: user
+  #       MYSQL_PASSWORD: password
+  #   ports:
+  #       - "9906:3306"

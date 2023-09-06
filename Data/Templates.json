@@ -1,0 +1,22 @@
+[
+  {
+    "id" : -1,
+    "name" : "Custom Message",
+    "message" : ""
+  },
+  {
+    "id" : 1,
+    "name" : "Welcome Message",
+    "message" : "Welcome {$guest} and {$greeting}! We're so glad you're here in {$roomNumber}, thanks for staying with us here at {$company}"
+  },
+  {
+    "id" : 2,
+    "name" : "Farewell Message",
+    "message" : "{$greeting} {$guest}, we hope you enjoyed your stay in room {$roomNumber}. Thank you from all of us here at {$company}."
+  },
+  {
+    "id" : 3,
+    "name" : "Funny Message",
+    "message" : "{$greeting} from Boss Hog, Wade Boggs, Nanny Ogg and {$guest}. Coming at you live from {$roomNumber}.9 FM {$company}"
+  }
+]
