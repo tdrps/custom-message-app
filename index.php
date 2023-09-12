@@ -1,6 +1,6 @@
 <?php
 
-include('app.php');
+include 'app.php';
 
 use Parts\TemplateParts;
 
