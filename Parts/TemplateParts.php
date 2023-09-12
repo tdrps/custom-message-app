@@ -18,7 +18,7 @@ class TemplateParts
   {
     
     echo '<div class="form-group | d-flex flex-column">';
-    echo '<label for="$name">Choose ' .  $name . '</label>';
+    echo '<label for="' . $name . '-select">Choose ' .  $name . '</label>';
     echo '<select id="' . $name . '-select" name="' . $name . '">';
     foreach($selectables as $selectable){
       echo '<option value="' . $selectable->getValue() . '">' . $selectable->getLabel() . '</option>';
@@ -32,7 +32,7 @@ class TemplateParts
   public static function customTextArea($id)
   {
     echo '<div class="form-group">';
-    echo '<label for="custom-template">Enter Custom Message Template</label>';
+    echo '<label for="' . $id . '">Enter Custom Message Template</label>';
     echo '<textarea class="form-control" id="' . $id . '" name="custom-message" rows="3"></textarea>';
     echo '</div>';
   }
