@@ -6,8 +6,13 @@ use Parts\TemplateParts;
 
 ?>
 <html>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="main.js"></script>
+</head>
 
 <body>
   <div class="container py-5">
@@ -60,7 +65,7 @@ use Parts\TemplateParts;
       </p>
     </div>
     <div class="container">
-      <form class="message-generator" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get">
+      <form class="message-generator" id="message-form">
         <div class="row">
 
           <div class="col-sm-4">
@@ -105,12 +110,3 @@ use Parts\TemplateParts;
 </body>
 
 </html>
-
-<?php
-
-
-if(isset($_GET['guest'])){
-
-  buildMessage();
-
-}
